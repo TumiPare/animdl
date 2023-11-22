@@ -1,42 +1,43 @@
 <h1 align="center"><img src="https://capsule-render.vercel.app/api?type=soft&fontColor=703ee5&text=justfoolingaround/animdl&height=150&fontSize=60&desc=Ridiculously%20efficient,%20fast%20and%20light-weight.&descAlignY=75&descAlign=60&color=00000000&animation=twinkling"></h1>
-<p align="center"><sup>A highly efficient, powerful and fast anime scraper.</sup></p>
 
+<p align="center"><sup>A highly efficient, powerful and fast anime scraper.</sup></p>
+<p align="center"><strong>The Packaged Version</strong></p>
+<p  align="center">This fork represents a modified version of the original project, with enhancements and changes tailored as a packaged solution for use as a dependency.</p>
 <p align="center">
 <img src="./animdl_demo.gif"></p>
 
 ***
 
-## Overview
+## Overview``
 
-*   [Installation](#installation)
-    1.  [PIP Installation](#installation)
-    2.  [Source Code Download](#installation)
-*   [Support](#support)
-*   [Usage](#usage)
-    *   [`stream` / `download` / `grab`](#stream--download--grab)
-    *   [`-r` / `--range`](#-r----range-argument)
-    *   [`--index`](#--index-argument)
-    *   [`-s` / `--special`](#-s----special-argument)
-    *   [`-q` / `--quality`](#-q----quality-argument)
-    *   [**More** usage](#conclusion)
-*   [Providers](#providers)
-*   [Configurations](#configurations)
-    *   [Setting up providers](#setting-up-providers)
-    *   [Quality selection](#quality-selection)
-    *   [Player selection](#player-selection)
-    *   [`ffmpeg` set-up](#ffmpeg-set-up)
-    *   [Discord Rich Presence set-up](#discord-rich-presence-set-up)
-    *   [`fzf` set-up](#fzf-set-up)
-    *   [Schedule set-up](#schedule-set-up)
-*   [Contributing to the project](#contributing-to-the-project)
-*   [Project Disclaimer](#project-disclaimer)
-*   [In a nutshell](#in-a-nutshell)
-*   [Code redistribution](#code-redistribution)
-*   [From the author](#from-the-author)
-*   [Honourable mentions](#honourable-mentions)
-    *   [Similar Projects](#similar-projects)
-    *   [Internal Dependencies](#internal-dependencies)
-*   [Sponsoring the project](#sponsoring-the-project)
+- [Overview\`\`](#overview)
+- [Installation](#installation)
+- [Support](#support)
+- [Usage](#usage)
+  - [`stream` / `download` / `grab`](#stream--download--grab)
+  - [`-r` / `--range` argument](#-r----range-argument)
+  - [`--index` argument](#--index-argument)
+  - [`-s` / `--special` argument](#-s----special-argument)
+  - [`-q` / `--quality` argument](#-q----quality-argument)
+  - [Conclusion](#conclusion)
+- [Providers](#providers)
+- [Configurations](#configurations)
+  - [Setting up providers](#setting-up-providers)
+  - [Quality selection](#quality-selection)
+  - [Player selection](#player-selection)
+  - [ffmpeg set-up](#ffmpeg-set-up)
+  - [Discord Rich Presence set-up](#discord-rich-presence-set-up)
+  - [fzf set-up](#fzf-set-up)
+  - [Schedule set-up](#schedule-set-up)
+- [Contributing to the project](#contributing-to-the-project)
+- [Project disclaimer](#project-disclaimer)
+- [In a nutshell](#in-a-nutshell)
+- [Code redistribution](#code-redistribution)
+- [From the author](#from-the-author)
+- [Honourable mentions](#honourable-mentions)
+  - [Similar Projects](#similar-projects)
+  - [Internal Dependencies](#internal-dependencies)
+- [Sponsoring the project](#sponsoring-the-project)
 
 ## Installation
 

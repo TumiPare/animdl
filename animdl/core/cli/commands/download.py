@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 
-import click
+# import click
 from rich.text import Text
 
 from ...__version__ import __core__
@@ -16,21 +16,21 @@ from ...config import (
 from .. import exit_codes, helpers, http_client
 
 
-@click.command(name="download", help="Download your favorite anime by query.")
-@helpers.decorators.content_fetch_options(
-    default_quality_string=QUALITY,
-)
-@helpers.decorators.download_options(
-    default_download_dir=DOWNLOAD_DIRECTORY,
-)
-@helpers.decorators.automatic_selection_options()
-@helpers.decorators.logging_options()
-@helpers.decorators.setup_loggers()
-@helpers.decorators.banner_gift_wrapper(
-    http_client.client, __core__, check_for_updates=CHECK_FOR_UPDATES
-)
+# @click.command(name="download", help="Download your favorite anime by query.")
+# @helpers.decorators.content_fetch_options(
+#     default_quality_string=QUALITY,
+# )
+# @helpers.decorators.download_options(
+#     default_download_dir=DOWNLOAD_DIRECTORY,
+# )
+# @helpers.decorators.automatic_selection_options()
+# @helpers.decorators.logging_options()
+# @helpers.decorators.setup_loggers()
+# @helpers.decorators.banner_gift_wrapper(
+#     http_client.client, __core__, check_for_updates=CHECK_FOR_UPDATES
+# )
 def animdl_download(
-    query, special, quality, download_dir, idm, index, log_level, **kwargs
+    query, special, quality, download_dir , idm, index, log_level, **kwargs
 ):
     r = kwargs.get("range")
 

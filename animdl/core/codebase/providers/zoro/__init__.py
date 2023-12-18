@@ -74,7 +74,8 @@ def fetcher(session, url, check, match):
         .get("html")
     ).cssselect("a[title][data-number][data-id]"):
         episode_number = int_or(episode.get("data-number", "") or "")
-        if check(episode_number):
+        # print(episode_number)
+        if check == episode_number:
             yield partial(
                 lambda d_id, t: list(extract_episode(session, d_id, t)),
                 d_id=episode.get("data-id"),

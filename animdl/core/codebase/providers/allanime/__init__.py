@@ -186,7 +186,7 @@ def fetcher(session, url: "str", check, match):
     ).get("availableEpisodesDetail", {})
 
     for episode, content in iter_episodes(available_episodes):
-        if check(episode):
+        if episode == check:
             yield partial(
                 lambda session, content, show_id: list(
                     extract_content(

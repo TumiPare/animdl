@@ -2,7 +2,7 @@ import time
 from collections import defaultdict
 from datetime import datetime
 
-import click
+# import click
 
 from ...__version__ import __core__
 from ...config import ANICHART, DATE_FORMAT, TIME_FORMAT
@@ -86,17 +86,17 @@ def iter_schedules(session, unix_time):
         yield from data.get("airingSchedules", [])
 
 
-@click.command(name="schedule", help="Know which animes are going over the air when.")
-@click.option(
-    "--offset",
-    "-o",
-    type=int,
-    default=86400,
-    help="Subtract the offset from the current time to get the schedule for aired anime.",
-)
-@helpers.decorators.logging_options()
-@helpers.decorators.setup_loggers()
-@helpers.decorators.banner_gift_wrapper(client, __core__)
+# @click.command(name="schedule", help="Know which animes are going over the air when.")
+# @click.option(
+#     "--offset",
+#     "-o",
+#     type=int,
+#     default=86400,
+#     help="Subtract the offset from the current time to get the schedule for aired anime.",
+# )
+# @helpers.decorators.logging_options()
+# @helpers.decorators.setup_loggers()
+# @helpers.decorators.banner_gift_wrapper(client, __core__)
 def animdl_schedule(offset: int, **kwargs):
 
     including_yesterday = int(time.time()) - offset

@@ -1,4 +1,4 @@
-import click
+# import click
 
 from ...__version__ import __core__
 from ...codebase.helpers import optopt
@@ -8,27 +8,27 @@ from .. import helpers
 from ..http_client import client
 
 
-@click.command(name="search", help="Search for an anime in the provider.")
-@click.argument("query", required=True)
-@click.option(
-    "-p",
-    "--provider",
-    help="Provider to search in.",
-    default=DEFAULT_PROVIDER,
-    type=click.Choice(helpers.provider_searcher_mapping.keys(), case_sensitive=False),
-)
-@helpers.decorators.logging_options()
-@click.option(
-    "-j",
-    "--json",
-    help="Output as json.",
-    is_flag=True,
-    flag_value=True,
-)
-@helpers.decorators.setup_loggers()
-@helpers.decorators.banner_gift_wrapper(
-    client, __core__, check_for_updates=CHECK_FOR_UPDATES
-)
+# @click.command(name="search", help="Search for an anime in the provider.")
+# @click.argument("query", required=True)
+# @click.option(
+#     "-p",
+#     "--provider",
+#     help="Provider to search in.",
+#     default=DEFAULT_PROVIDER,
+#     type=click.Choice(helpers.provider_searcher_mapping.keys(), case_sensitive=False),
+# )
+# @helpers.decorators.logging_options()
+# @click.option(
+#     "-j",
+#     "--json",
+#     help="Output as json.",
+#     is_flag=True,
+#     flag_value=True,
+# )
+# @helpers.decorators.setup_loggers()
+# @helpers.decorators.banner_gift_wrapper(
+#     client, __core__, check_for_updates=CHECK_FOR_UPDATES
+# )
 def animdl_search(query, json, provider, **kwargs):
 
     console = helpers.stream_handlers.get_console()

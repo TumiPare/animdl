@@ -71,7 +71,7 @@ def fetcher(session, url, check, match):
     total = initial_session["total"]
 
     for episode_number in range(1, total + 1):
-        if check(episode_number):
+        if check == episode_number:
             yield functools.partial(
                 (
                     lambda episode_number: iter_episode_streams(

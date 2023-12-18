@@ -3,23 +3,24 @@ from .prompts import get_prompt_manager
 from .searcher import provider_searcher_mapping
 
 
-def prompt_user(logger, anime_list_genexp, provider):
+# def prompt_user(logger, anime_list_genexp, provider):
+# def prompt_user( anime_list_genexp, provider):
 
-    manager = get_prompt_manager()
+#     manager = get_prompt_manager()
 
-    return manager(
-        logger,
-        anime_list_genexp,
-        processor=lambda component: (component, provider),
-        component_name="search result",
-        fallback=({}, None),
-        error_message=f"Failed to find anything of that query on {provider!r}. Try searching on other providers.",
-        stdout_processor=lambda component: f"{component[0]['name']} / {component[0]['anime_url']}",
-    )
+#     return manager(
+#         logger,
+#         anime_list_genexp,
+#         processor=lambda component: (component, provider),
+#         component_name="search result",
+#         fallback=({}, None),
+#         error_message=f"Failed to find anything of that query on {provider!r}. Try searching on other providers.",
+#         stdout_processor=lambda component: f"{component[0]['name']} / {component[0]['anime_url']}",
+#     )
 
 
-def process_query(session, query: str, console, provider: str, *, auto_index=1):
-
+# def process_query(session, query: str , console, provider: str, *, auto_index=1):
+def process_query(session, query: str, provider: str, *, auto_index=1):
     match, module, provider_name = get_provider(query, raise_on_failure=False)
 
     if module:
@@ -37,8 +38,9 @@ def process_query(session, query: str, console, provider: str, *, auto_index=1):
 
     genexp = provider_searcher_mapping[provider](session, query)
 
-    if auto_index is None:
-        return prompt_user(console, genexp, provider)
+    # if auto_index is None:
+    #     # return prompt_user(console, genexp, provider)
+    #     return prompt_user(console, genexp, provider)
 
     expanded = list(genexp)
 

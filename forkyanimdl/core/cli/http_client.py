@@ -2,7 +2,7 @@ import logging
 
 import httpx
 
-from animdl import utils
+from forkyanimdl import utils
 
 from .exit_codes import INTERNET_ISSUE
 

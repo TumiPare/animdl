@@ -46,7 +46,7 @@ This project can be installed on to your device via different mechanisms, these 
 1.  PIP Installs Packages **aka** PIP Installation
 
     ```sh
-    pip install animdl
+    pip install forkyanimdl
     ```
 
 2.  Installation from source
@@ -65,7 +65,7 @@ This project can be installed on to your device via different mechanisms, these 
 
 ## Support
 
-You can contact the developer directly via this [email](mailto:kr.justfoolingaround@gmail.com). However, the most recommended way is to head to the discord server.
+You can contact the developer directly via this [email](mailto:tumishangpare@gmail.com) or contact the owner of the original [repo][https://github.com/justfoolingaround/animdl], [justfoolingaround](mailto:kr.justfoolingaround@gmail.com). However, the most recommended way is to head to the discord server.
 
 <p align="center">
 <a href="https://discord.gg/gaX2Snst2j">

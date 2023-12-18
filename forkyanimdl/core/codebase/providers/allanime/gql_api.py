@@ -1,4 +1,4 @@
-from animdl.utils import optopt
+from forkyanimdl.utils import optopt
 
 ENDPOINT = "https://api.allanime.day/api"
 

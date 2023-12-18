@@ -4,7 +4,7 @@ from typing import Callable, DefaultDict, Dict, List, TypeVar
 import anitopy
 from anchor.strings import regexify_url
 
-from animdl.utils import optopt
+from forkyanimdl.utils import optopt
 
 from . import superscrapers
 

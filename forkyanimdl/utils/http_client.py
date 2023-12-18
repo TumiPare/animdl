@@ -6,7 +6,7 @@ import sys
 import typing as t
 from urllib.parse import quote, urlencode
 
-from animdl.core.__version__ import __core__
+from forkyanimdl.core.__version__ import __core__
 
 if t.TYPE_CHECKING:
     import logging
